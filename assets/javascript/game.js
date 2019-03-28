@@ -43,14 +43,12 @@ document.onkeydown = function(event) {
   if (letter === letterToGuess) {
     wins++;
     document.querySelector("#wins").innerHTML = wins;
-
     reset();
   }
 
   if (guessesLeft === 0) {
     losses++;
     document.querySelector("#losses").innerHTML = losses;
-
     reset();
   }
 };
